@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "TK1b/mVzFSA=",
+  "success": true,
+  "projectFilePath": "E:\\Desarrollo\\sistemas_internos\\NET\\tickets_web\\tickets_web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jpsanchez\\.nuget\\packages\\dapper\\2.1.79\\dapper.2.1.79.nupkg.sha512",
+    "C:\\Users\\jpsanchez\\.nuget\\packages\\npgsql\\10.0.3\\npgsql.10.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
