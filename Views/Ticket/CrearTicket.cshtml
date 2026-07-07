@@ -1,0 +1,47 @@
+@model IEnumerable<tickets_web.Models.DTOS.TicketCategoriasDTO>
+
+@{
+    ViewData["Title"] = "Crear Ticket";
+}
+
+<div class="container text-center">
+    <div class="row justify-content-center">
+        <div class="col">
+            <div class="mb-5">
+                <h2 class="fw-bold m-0 text-dark">Mesa de Ayuda TI</h2>
+                <p class="text-muted m-0">Levantar un ticket para una incidencia o soporte técnico.</p>
+            </div>
+
+            <div class="card pb-5">
+                <form action="">
+                    <h5><i class="bi bi-person-badge-fill"></i> Información del solicitante</h5>
+
+                    <div class="container justify-content-center">
+                        <div class="row">
+                            <div class="input-container">
+                            <input type="text" class="input-field" />
+                            <label class="input-label" for="input-field"><i class="bi bi-person-badge"></i>Nomina</label>
+                            <span class="input-highlight"></span>
+                            </div>
+                        </div>
+                        <div class="row"> 
+                            <div class="input-container">
+                            <input type="text" class="input-field" />
+                            <label class="input-label" for="input-field"><i class="bi bi-exclamation-circle"></i>Titulo (Pequeña descripción)</label>
+                            <span class="input-highlight"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5>Detalles del problema</h5>
+
+                    <div class="row">
+                        <div class="form-select">
+                            <option value="1">uno</option>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

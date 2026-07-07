@@ -2,7 +2,7 @@
 
 public class TicketCategoriasDTO
 {
-    public int id_categoria { get;set; }
+    public long id_cat { get;set; }
     public string descripcion { get;set; } = string.Empty;
 }
 public class TicketSubCategoriasDTO

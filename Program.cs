@@ -8,7 +8,7 @@ var connectionString = builder.Configuration.GetConnectionString("PostgreConnect
 
 builder.Services.AddTransient<IDbConnection>((sp) => new NpgsqlConnection(connectionString));
 
-builder.Services.AddScoped<ITciket,TicketRepositorie>();
+builder.Services.AddScoped<ITicket,TicketRepositorie>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -29,6 +29,11 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapStaticAssets();
+
+app.MapControllerRoute(
+    name: "crear_ticket",
+    pattern: "{controller=Ticket}/{action=Index}"
+);
 
 app.MapControllerRoute(
     name: "default",

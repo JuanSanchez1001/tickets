@@ -7,16 +7,16 @@ namespace tickets_web.Controllers
 {
     public class TicketController : Controller
     {
-        private readonly ITciket _Iticket;
+        private readonly ITicket _ticketRepo;
 
-        public TicketController(ITciket iTicket)
+        public TicketController(ITicket iTicket)
         {
-            _Iticket = iTicket;
+            _ticketRepo = iTicket;
         }
 
         public async Task<IActionResult> CrearTicket()
         {
-            var category = await _Iticket.getAllCategoria();
+            var category = await _ticketRepo.getAllCategorias();
             return View(category);
         }
 

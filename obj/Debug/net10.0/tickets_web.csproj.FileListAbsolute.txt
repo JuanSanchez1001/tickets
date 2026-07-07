@@ -18,13 +18,13 @@ E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\tickets_web.cs
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\tickets_web.MvcApplicationPartsAssemblyInfo.cache
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\tickets_web.RazorAssemblyInfo.cache
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\tickets_web.RazorAssemblyInfo.cs
+E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\tickets_web.sourcelink.json
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\rjimswa.dswa.cache.json
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\scopedcss\bundle\tickets_web.styles.css
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\scopedcss\projectbundle\tickets_web.bundle.scp.css
-E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\q9cu1d5ch7-{0}-b9sayid5wm-b9sayid5wm.gz
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\ean9ytc7nd-{0}-61n19gt1b8-61n19gt1b8.gz
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\gxxyrs0wpp-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\h2glqb7ei4-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -99,3 +99,6 @@ E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\refint\tickets
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\tickets_web.pdb
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\tickets_web.genruntimeconfig.cache
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\ref\tickets_web.dll
+E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\1b7nxlniyf-{0}-od0yn6f0e3-od0yn6f0e3.gz
+E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\q9cu1d5ch7-{0}-w6agmy9bcl-w6agmy9bcl.gz
+E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\f9e9rncf62-{0}-0c1d32ph4u-0c1d32ph4u.gz
