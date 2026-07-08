@@ -1,5 +1,3 @@
-@model IEnumerable<tickets_web.Models.DTOS.TicketCategoriasDTO>
-
 @{
     ViewData["Title"] = "Crear Ticket";
 }
@@ -18,30 +16,60 @@
 
                     <div class="container justify-content-center">
                         <div class="row">
-                            <div class="input-container">
-                            <input type="text" class="input-field" />
-                            <label class="input-label" for="input-field"><i class="bi bi-person-badge"></i>Nomina</label>
-                            <span class="input-highlight"></span>
+                            <div class="form-group">
+                                <label for="nomina">No. Nomina</label>
+                                <input type="text" placeholder="Ingresa número de nomina" id="nomina">
                             </div>
                         </div>
                         <div class="row"> 
-                            <div class="input-container">
-                            <input type="text" class="input-field" />
-                            <label class="input-label" for="input-field"><i class="bi bi-exclamation-circle"></i>Titulo (Pequeña descripción)</label>
-                            <span class="input-highlight"></span>
+                            <div class="form-group">
+                                <label for="title">Titulo</label>
+                                <input type="text" placeholder="Pequeña descripción" id="title">
                             </div>
                         </div>
                     </div>
 
-                    <h5>Detalles del problema</h5>
+                    <h5><i class="bi bi-exclamation-circle"></i>Detalles del problema</h5>
 
                     <div class="row">
-                        <div class="form-select">
-                            <option value="1">uno</option>
+                        <div class="form-group">
+                            <label for="category">Categoria</label>
+                            <select name="cat" id="category"></select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="subcategory">Subcategoria</label>
+                            <select name="subcat" id="subcategory"></select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="failure">Fallo</label>
+                            <select name="fail" id="failure"></select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="descripcion">Descripcion</label>
+                            <textarea name="desc" id="descripcion" placeholder="Descripción del problema"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-warning"><i class="bi bi-bucket"></i>Limpiar</button>
+                            <button type="button" class="btn btn-success" id="btn-createticket"><i class="bi bi-send"></i>Crear</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-</div>
+@* Importante sino carga antes de que se termine de renderizar *@
+@section Scripts {
+    <script>
+        // Razor generará la ruta correcta aquí y se guardará en una variable de JavaScript
+        //const urlGetCategorias = '@Url.Action("getCategorias", "Ticket")';
+    </script>
+    <script src="~/js/CrearTicket.js"></script>
+}

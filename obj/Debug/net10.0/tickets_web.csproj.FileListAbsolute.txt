@@ -100,5 +100,6 @@ E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\tickets_web.pd
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\tickets_web.genruntimeconfig.cache
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\ref\tickets_web.dll
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\1b7nxlniyf-{0}-od0yn6f0e3-od0yn6f0e3.gz
-E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\q9cu1d5ch7-{0}-w6agmy9bcl-w6agmy9bcl.gz
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\f9e9rncf62-{0}-0c1d32ph4u-0c1d32ph4u.gz
+E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\q9cu1d5ch7-{0}-vw5t612uct-vw5t612uct.gz
+E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\uwlv4z0cd2-{0}-c820shr1l9-c820shr1l9.gz
