@@ -1,0 +1,100 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Login";
+}
+
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-login-tab" data-bs-toggle="tab" data-bs-target="#nav-login" type="button" role="tab" aria-controls="nav-login" aria-selected="true">Login</button>
+        <button class="nav-link" id="nav-changepass-tab" data-bs-toggle="tab" data-bs-target="#nav-changepass" type="button" role="tab" aria-controls="nav-changepass" aria-selected="false">Cambiar contraseña</button>
+    </div>
+</nav>
+
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab" tabindex="0">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="card" style="width: 50%;">
+                    <div class="card-body">
+                        <div class="card-title mb-3">
+                            <h5>Iniciar Sesión</h5>
+                        </div>
+                        <div class="form-group">
+                            <label for="nomina">No. nomina</label>
+                            <input type="text" class="input-login" placeholder="Ingresa no. nomina" style="width: 20%;">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Contraseña</label>
+                            <input type="password" placeholder="Ingresa contraseña" style="width: 20%;" id="password">
+                        </div>
+                        <button type="button" class="btn btn-success">Entrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="nav-changepass" role="tabpanel" aria-labelledby="nav-changepass-tab" tabindex="0">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title mb-3">
+                                <h5>Cambiar Contraseña</h5>
+                            </div>
+                            <div class="form-group">
+                                <label for="nomina">No. nomina</label>
+                                <input type="text" placeholder="Ingresa no. nomina" style="width: 20%;">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Nueva contraseña</label>
+                                <input type="password" placeholder="Ingresa contraseña" style="width: 20%;" id="new_password">
+                            </div>
+                            <button type="button" class="btn btn-success">Cambiar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h5>Seguridad de la contraseña</h5>
+                                <div class="container-password-sec">
+                                    <div class="alert alert-info" role="alert" style="font-size: small;"><i class="bi bi-question-square-fill"></i>
+                                        Su contraseña debe de cumplir con los siguientes parámetros de seguridad.
+                                        Evite usar contraseñas predecibles como nombres de familiares o mascotas, fechas, 
+                                        o cualquier tipo de información personal.
+                                    </div>
+                                    <div class="alert alert-primary" role="alert" id="password-length">
+                                       <i class="bi bi-exclamation-triangle-fill"></i> Debe de ser mínimo de 8 caracteres.
+                                    </div>
+                                    <div class="alert alert-primary" role="alert" id="especial-caracter">
+                                        <i class="bi bi-exclamation-triangle-fill"></i> Debe de tener por lo menos un caracter especial como: ( * [ / - _
+                                    </div>
+                                    <div class="alert alert-primary" role="alert" id="upper-letter">
+                                        <i class="bi bi-exclamation-triangle-fill"></i> Debe de tener por lo menos una letra mayúscula.
+                                    </div>
+                                    <div class="alert alert-primary" role="alert" id="lower-letter">
+                                        <i class="bi bi-exclamation-triangle-fill"></i> Debe de tener por lo menos una letra minúscula.
+                                    </div>
+                                    <div class="alert alert-primary" role="alert" id="password-number">
+                                        <i class="bi bi-exclamation-triangle-fill"></i> Debe de tener por lo menos un número.
+                                    </div>
+                                    @* <div class="alert alert-warning" role="alert">
+                                        Evita contrasñas predecibles como fechas memorables, nombres propios o información personal.
+                                    </div> *@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+@section Scripts{
+    <script src="~/js/Login.js"></script>
+}

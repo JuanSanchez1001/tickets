@@ -12,11 +12,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="~/lib/DateRangePicker/daterangepicker.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3" style="background-color: #9cd1f8;">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                     <i class="bi bi-ticket-perforated"></i>
@@ -32,7 +32,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="Index">Inciar Sesión</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Ticket" asp-action="CrearTicket">Crear Ticket</a>
@@ -56,6 +56,10 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/sweetalert2-11.26.25/sweetalert2v11.26.25.js"></script>
+    @* El orden de los factores si altera el producto *@
+    <script src="~/lib/DateRangePicker/moment.min.js"></script>
+    <script src="~/lib/DateRangePicker/daterangepicker.min.js"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

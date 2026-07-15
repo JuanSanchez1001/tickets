@@ -80,7 +80,6 @@ E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\gm4
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\hl3u2miby3-{0}-ag7o75518u-ag7o75518u.gz
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\3b20avvmoe-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\c732tb6eay-{0}-0i3buxo5is-0i3buxo5is.gz
-E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\6c5wqjm2ge-{0}-o1o13a6vjx-o1o13a6vjx.gz
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\afgq7c89n4-{0}-ttgo8qnofa-ttgo8qnofa.gz
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\s76xiz49t9-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\ua64a1zgy3-{0}-muycvpuwrr-muycvpuwrr.gz
@@ -102,4 +101,14 @@ E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\ref\tickets_we
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\1b7nxlniyf-{0}-od0yn6f0e3-od0yn6f0e3.gz
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\f9e9rncf62-{0}-0c1d32ph4u-0c1d32ph4u.gz
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\q9cu1d5ch7-{0}-vw5t612uct-vw5t612uct.gz
-E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\uwlv4z0cd2-{0}-c820shr1l9-c820shr1l9.gz
+E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\4kmp8jx406-{0}-lbs5xifbmi-lbs5xifbmi.gz
+E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\rr98nv02lo-{0}-up5j6ov763-up5j6ov763.gz
+E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\9muqwhql2g-{0}-6y9gog59ak-6y9gog59ak.gz
+E:\Desarrollo\sistemas_internos\NET\tickets_web\bin\Debug\net10.0\BCrypt-Net-Next.dll
+E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\69s1lyfgqv-{0}-cx2ahhlm5e-cx2ahhlm5e.gz
+E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\v2e7muhuxi-{0}-mmyak4rc63-mmyak4rc63.gz
+E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\g2nk5fslt4-{0}-85vbs1dise-85vbs1dise.gz
+E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\6dsvv8ty83-{0}-q942b5fvqt-q942b5fvqt.gz
+E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\6z96kebvu5-{0}-ipglhweb5e-ipglhweb5e.gz
+E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\6c5wqjm2ge-{0}-vu3kklfnoq-vu3kklfnoq.gz
+E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\3j420cjwey-{0}-sg7l31cwhz-sg7l31cwhz.gz

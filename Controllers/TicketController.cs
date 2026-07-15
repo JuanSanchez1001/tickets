@@ -14,9 +14,13 @@ namespace tickets_web.Controllers
             _ticketRepo = iTicket;
         }
 
-        public async Task<IActionResult> CrearTicket()
+        public async Task<IActionResult> CrearTicket() //Pantalla para crear un ticket
         {
             //var category = await _ticketRepo.getAllCategorias();
+            return View();
+        }
+        public async Task<IActionResult> Table() //Pantalla para ver el listado de los tickets
+        {
             return View();
         }
         [HttpGet]
@@ -37,6 +41,30 @@ namespace tickets_web.Controllers
         {
             var fallos = await _ticketRepo.getAllFallos(id_subcat);
             return Json(new {fallos});
+        }
+        [HttpGet]
+        public async Task<IActionResult> getPrioridad()
+        {
+            var prioridades = await _ticketRepo.getAllPrioridad();
+            return Json(new {prioridades});
+        }
+        [HttpGet]
+        public async Task<IActionResult> getEstatus()
+        {
+            var estatus = await _ticketRepo.getAllEstatus();
+            return Json(new {estatus});
+        }
+        [HttpGet]
+        public async Task<IActionResult> getTableTickets(DateTime date_ini, DateTime date_fin, int idCat, int idSubcat, int idFallo, int idPrioridad, int idEstatus, int user)
+        {
+            var table = await _ticketRepo.getTicketsTable(date_ini, date_fin, idCat, idSubcat, idFallo, idPrioridad, idEstatus, user);
+            return Json(new {table});
+        }
+        [HttpPost]
+        public async Task<IActionResult> CreateNewTicket(NewTicketDTO dto)
+        {
+            int id_ticket = await _ticketRepo.CreateNewTicket(dto);
+            return Json(new{id_ticket});
         }
     }
 }

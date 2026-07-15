@@ -17,7 +17,7 @@ $(document).ready(function(){
     //send data
     $("#btn-createticket").on('click', function(){
         CreateTicket();
-    })
+    });
 });
 
 function GetAllCategories(){
@@ -35,6 +35,7 @@ function GetAllCategories(){
             }
             //console.log(innerHTML);
             $("#category").append(innerHTML);
+            GetAllSubCategories($("#category").val());
         },
         error: function(err){
             console.log(err);
@@ -59,6 +60,7 @@ function GetAllSubCategories(id_cat){
             }
             //console.log(innerHTML);
             $("#subcategory").append(innerHTML);
+            GetAllFailures($("#subcategory").val());
         },
         error: function(err){
             console.log(err);
@@ -85,11 +87,28 @@ function GetAllFailures(id_subcat){
 
 function CreateTicket(){
     formData = {
-        nomina = $("#nomina").val(),
-        title = $("#title").val(),
-        category = $("#category").val(),
-        subcategory = $("#subcategory").val(),
-        failure = $("#failure").val(),
-        descripcion = $("#descripcion").val()
-    }
+        nomina: $("#nomina").val(),
+        title: $("#title").val(),
+        id_cat: $("#category").val(),
+        id_subcat: $("#subcategory").val(),
+        id_failure: $("#failure").val(),
+        descripcion: $("#descripcion").val()
+    };
+    $.ajax({
+        async: true,
+        url: "CreateNewTicket",
+        type: "POST",
+        data: formData,
+        dataType: "json",
+        success: function(data){
+            Swal.fire({
+                title: "Éxito",
+                text: "Se ha creado el ticket con éxito. ID: " + data.id_ticket,
+                icon: "success"
+            });
+        },
+        error(err){
+
+        }
+    });
 }

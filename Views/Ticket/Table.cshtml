@@ -1,0 +1,99 @@
+﻿@section Scripts {
+    <script src="~/js/Tickets/Table.js"></script>
+}
+@{
+    ViewData["Title"] = "Listado de tickets";
+}
+<h2 class="text-center">Listado de tickets</h2>
+<div class="container text-center">
+    <div class="row justify-content-center mb-3">
+        <div class="col">
+            <h3>Filtros</h3>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col">
+            <label for="date">Fechas</label>
+            <div class="filter-group">
+                <input type="text" id="dates" readonly>
+            </div>  
+        </div>
+        <div class="col">
+            <label for="category">Categorias</label>
+            <div class="filter-group">
+                <select name="category" id="category"></select>
+            </div>
+        </div>
+        <div class="col">
+            <label for="subcategory">Subcategoria</label>
+            <div class="filter-group">
+                <select name="subcategory" id="subcategory"></select>
+            </div>
+        </div>
+        <div class="col">
+            <label for="failure">Tipo de fallo</label>
+            <div class="filter-group">
+                <select name="failure" id="failure"></select>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mb-3">
+        <div class="col">
+            <label for="priority">Prioridad</label>
+            <div class="filter-group">
+                <select name="priority" id="priority"></select>
+            </div>
+        </div>
+        <div class="col">
+            <label for="status">Estatus</label>
+            <div class="filter-group">
+                <select name="status" id="status"></select>
+            </div>
+        </div>
+        <div class="col">
+            <label for="status">Personal IT</label>
+            <div class="filter-group">
+                <select name="status" id="usuarios">
+                    <option value="0">Todos</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mb-3">
+        <div class="col">
+            <div class="d-grid">
+                <button type="button" class="btn btn-success" id="generate-report">Generar</button>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mb-3">
+         <table class="table table-stripped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Usuario</th>
+                        <th>Titulo</th>
+                        <th>Categoria</th>
+                        <th>Subcategoria</th>
+                        <th>Tipo de Fallo</th>
+                        <th>Fecha de Creacion</th>
+                        <th>Prioridad</th>
+                        <th>Estatus</th>
+                        <th>Asignado a</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="table-tickets"></tbody>
+            </table>
+    </div>
+</div>
+<style>
+    .filter-group{
+        width: 100%;
+    }
+    select, input{
+        border: 2px solid #e5e7eb;
+        border-radius: 2px;
+        width: 100%;
+    }
+</style>
