@@ -1,6 +1,7 @@
 using System.Data;
 using Npgsql;
 using tickets_web.Models.Interfaces;
+using tickets_web.Models.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,11 +10,24 @@ var connectionString = builder.Configuration.GetConnectionString("PostgreConnect
 builder.Services.AddTransient<IDbConnection>((sp) => new NpgsqlConnection(connectionString));
 
 builder.Services.AddScoped<ITicket,TicketRepositorie>();
+builder.Services.AddScoped<IUser,UserRepositorie>();
 
+//Set variables de sesión :D
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+
 var app = builder.Build();
+
+//Enable variabes de session
+app.UseSession();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

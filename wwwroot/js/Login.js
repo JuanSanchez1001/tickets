@@ -7,10 +7,34 @@ $(document).ready(function(){
     $("#new_password").keyup(function(){
         validate_password($("#new_password").val());
     });
+
+    $("#btn-login").on('click', function(){
+        Login();
+    });
 });
 
+function Login(){
+    console.log($("#input-login").val());
+    var data = {
+        nomina: $("#input-login").val()
+    }
+    $.ajax({
+        async: true,
+        url: "Auth/Login",
+        type: "POST",
+        data: data,
+        dataType: "json",
+        success: function(data){
+            console.log(data);
+        },
+        error: function(){
+
+        }
+    });
+}
+
 function validate_password(password){
-    console.log(password)
+    //console.log(password)
     if(password.length > 8){
         $("#password-length").removeClass("alert-primary alert-danger").addClass("alert-success");
     }else{
