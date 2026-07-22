@@ -20,12 +20,12 @@ namespace tickets_web.Controllers
             return View();
         }
 
-        // [HttpPost]
-        // public async Task<string> Login(int nomina)
-        // {
-        //     //var message = await _user.Login(nomina);
-        //     return "";
+        [HttpPost]
+        public async Task<string> Login(int nomina, string password)
+        {
+            var message = await _user.Login(nomina, password);
+            return "";
             
-        // }
+        }
     }
 }

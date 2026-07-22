@@ -3,5 +3,5 @@ namespace tickets_web.Models.Interfaces;
 
 public interface IUser
 {
-    Task<string> Login(int nomina);
+    Task<string> Login(int nomina, string pass);
 }
