@@ -13,10 +13,11 @@ public class UserRepositorie : IUser
     {
         _dbConnection = dbConnection;
     }
-    public async Task<string> Login(int nomina, string password)
+    public async Task<IEnumerable<UserLoginDTO>> Login(int nomina, string password)
     {
         var parameters = new DynamicParameters();
-        string message = ""; 
+        string message = "";
+        bool verifyPass = false;
         //var validatePasswotd = "";
         string storedProcedure = "tickets.sps_login";
         parameters.Add("v_nomina", nomina, DbType.Int32, ParameterDirection.Input);
@@ -26,37 +27,16 @@ public class UserRepositorie : IUser
         await _dbConnection.ExecuteAsync(storedProcedure, parameters, commandType: CommandType.StoredProcedure);
 
         string hash = parameters.Get<string>("hash_pass");
-        Console.WriteLine(hash.Length);
 
         if (hash.Length > 0)
         {
-            bool verifyPass = BCrypt.Net.BCrypt.Verify(password, hash);
-            Console.WriteLine(verifyPass);
+            verifyPass = BCrypt.Net.BCrypt.Verify(password, hash);
         }
 
-        // switch (estatus)
-        //     {
-        //         case 0:
-        //             message = "Ususario no encontrado";
-        //             break;
-        //         case 1: 
-        //             message = "Se necesita establacer una nueva contraseña";
-        //             break;
-        //         case 2:
-        //             /* Funcion para login */
-        //             string query = "SELECT * FROM tickets.fn_login(@nomina)";
-        //             Console.WriteLine(nomina);
-        //             var userInfo = await _dbConnection.QueryAsync<UserLoginDTO>(query, new
-        //             {
-        //                 nomina = nomina
-        //             });
-        //             //userInfo.ToList();
-        //             Console.WriteLine(userInfo.ToList());
-        //             break;
-        //         default: 
-        //             message = "Se produjo un error";
-        //         break;
-        //     }
-            return message;
+        if(verifyPass == true)
+        {
+            var query = "SELECT * FROM tickets.fn_login(@nomina)";
+            return await _dbConnection.QueryAsync<UserLoginDTO>(query);
+        }   
     }
 }

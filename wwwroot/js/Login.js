@@ -16,7 +16,8 @@ $(document).ready(function(){
 function Login(){
     console.log($("#input-login").val());
     var data = {
-        nomina: $("#input-login").val()
+        nomina: $("#input-login").val(),
+        password: $("#password").val()
     }
     $.ajax({
         async: true,

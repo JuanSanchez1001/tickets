@@ -111,4 +111,4 @@ E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\6ds
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\6z96kebvu5-{0}-ipglhweb5e-ipglhweb5e.gz
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\6c5wqjm2ge-{0}-vu3kklfnoq-vu3kklfnoq.gz
 E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\3j420cjwey-{0}-qe84ivzelv-qe84ivzelv.gz
-E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\69s1lyfgqv-{0}-ot4vkwsx8z-ot4vkwsx8z.gz
+E:\Desarrollo\sistemas_internos\NET\tickets_web\obj\Debug\net10.0\compressed\69s1lyfgqv-{0}-jimz9pd09d-jimz9pd09d.gz
